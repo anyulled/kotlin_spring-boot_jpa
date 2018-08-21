@@ -2,6 +2,7 @@ Kotlin JPA Demo
 [![Build Status](https://travis-ci.com/anyulled/kotlin_spring-boot_jpa.svg?branch=master)](https://travis-ci.com/anyulled/kotlin_spring-boot_jpa)
 [![codecov](https://codecov.io/gh/anyulled/kotlin_spring-boot_jpa/branch/master/graph/badge.svg)](https://codecov.io/gh/anyulled/kotlin_spring-boot_jpa)
 [![Maintainability](https://api.codeclimate.com/v1/badges/a10d87df5e5803a64feb/maintainability)](https://codeclimate.com/github/anyulled/kotlin_spring-boot_jpa/maintainability)
+[![Documentation](https://codedocs.xyz/anyulled/kotlin_spring-boot_jpa.svg)](https://codedocs.xyz/anyulled/kotlin_spring-boot_jpa/)
 ---
 
 a showcase of different entity mappings with JPA & Hibernate.
