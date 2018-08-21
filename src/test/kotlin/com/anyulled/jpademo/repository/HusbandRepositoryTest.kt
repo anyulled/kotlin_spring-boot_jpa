@@ -1,8 +1,7 @@
-package com.anyulled.jpademo
+package com.anyulled.jpademo.repository
 
 import com.anyulled.jpademo.model.Husband
 import com.anyulled.jpademo.model.Wife
-import com.anyulled.jpademo.repository.HusbandRepository
 import mu.KotlinLogging
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
