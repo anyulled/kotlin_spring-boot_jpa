@@ -10,7 +10,7 @@ data class Husband(
         @GeneratedValue(strategy = GenerationType.AUTO)
         val id: Long = 0,
         val name: String = "",
-        @OneToOne(mappedBy = "husband")
+        @OneToOne(mappedBy = "husband", fetch = FetchType.LAZY)
         @JsonManagedReference
         var wife: Wife? = null
 ) {
