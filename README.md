@@ -17,6 +17,7 @@ Simply do `mvn spring-boot:run` a make a request to the described mappings on th
 - [ ] Repository Tests
 - [ ] Entity tests (Possibly Dto integration?)
 
-## CI
+## Continuous Integration/ Code coverage
 
-- [ ] Travis CI
+- [x] Travis CI
+- [x] codecov.io
