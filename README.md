@@ -1,5 +1,5 @@
 Kotlin JPA Demo 
-[![Build Status](https://travis-ci.org/anyulled/kotlin_spring-boot_jpa.svg?branch=master)](https://travis-ci.org/anyulled/kotlin_spring-boo)
+[![Build Status](https://travis-ci.com/anyulled/kotlin_spring-boot_jpa.svg?branch=master)](https://travis-ci.com/anyulled/kotlin_spring-boot_jpa)
 [![codecov](https://codecov.io/gh/anyulled/kotlin_spring-boot_jpa/branch/master/graph/badge.svg)](https://codecov.io/gh/anyulled/kotlin_spring-boot_jpa)
 ---
 
