@@ -107,7 +107,7 @@ internal class HusbandWifeControllerTest(@Autowired val mockMvc: MockMvc) {
     fun `save wife`() {
         val wife = Wife(1L, "husband", null)
         given(husbandWifeService.saveWife(wife)).willReturn(wife)
-        mockMvc.perform(post("/api/husband").accept(MediaType.APPLICATION_JSON)
+        mockMvc.perform(post("/api/wife").accept(MediaType.APPLICATION_JSON)
                 .contentType(MediaType.APPLICATION_JSON)
                 .characterEncoding("utf-8")
                 .content(mapper.writeValueAsString(wife)))

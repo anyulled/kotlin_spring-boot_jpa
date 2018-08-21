@@ -13,10 +13,10 @@ Simply do `mvn spring-boot:run` a make a request to the described mappings on th
 - [ ] `@OneToMany`
 - [ ] `@ManyToMany`
 
-##Junit 5 tests pending
-- [ ] Controller tests
-- [ ] Service Tests
-- [ ] Repository Tests
+## Junit 5 tests pending
+- [X] Controller tests
+- [X] Service Tests
+- [X] Repository Tests
 - [ ] Entity tests (Possibly Dto integration?)
 
 ## Continuous Integration/ Code coverage
