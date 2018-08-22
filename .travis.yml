@@ -1,6 +1,17 @@
 language: java
-sudo: false # faster builds
-script: "mvn cobertura:cobertura"
-
+sudo: false
+cache:
+  directories:
+  - "$HOME/.m2/repository"
+  - "$HOME/.sonar/cache"
+addons:
+  sonarcloud:
+    organization: anyulled-github
+    token:
+      secure: gxkaTGjBvS1NGtKXTn8qBXmQXOwFv7CYRKZmW/DyLYXoPH/7LUKgnBw322tG78rHSRE2Xll3hSvLgpMeLF6ss1XqxQFYZvoB7wpVovvfS/5aGIxRJdwVql9UucPQdC8ugWvO3Fu2gM/JoNf45UHOWuKeAv21+xPx23pfKm5tPj4A5qxZx+noOmmP9JV/2AW3tpCH+ZtIwCrPE9iAfKsMpCezk1NR/3icbTwE6np9q4hdGoVvUL6Do+I5hiEZLXIwgR2MEyATycr24K/zByhXDTCZDs+R7VPPYrWBUtLQ2eegYbAI3FqLgPAyaCf4qblwtiuZnA9hcc+3vpZYpDQ/bE+rwmCrTPqVSSiKe9pqjpPFwX0B1jw5/BhunnVKUFDWtc8iIvukgXQDGarVaDJCMRrDhaSShH4N6+jzREWzPwtDEuV80H8Fz/bQH0SL+yemCQhHYBkVxXxvcoyNSPP9FOA7+vOTvoayTRr/+EWmBHpdMWP2CckLZWal1CwLpn6U3Z9W5xTMewNSBP67MJ7tn+3d85yNwbSF/iBk6MDQT8rJ1saZV3ESrNzhHMCV0AsiXfKBglgO+g8dlDytsfuJ+sVldb2+KjWk5Zl4bOVqLvwZ/fXKKcNqj4rQ4m+pSFfagQh1geaGSx6fGh+bFsrjBdigSKuRolK1c+fx2IvAYO0=
+script:
+- mvn cobertura:cobertura
+- mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar
+- sonar-scanner
 after_success:
 - bash <(curl -s https://codecov.io/bash)
