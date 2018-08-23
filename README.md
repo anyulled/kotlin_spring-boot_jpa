@@ -11,14 +11,14 @@ A showcase of different entity mappings with JPA & Hibernate.
 Simply do `mvn spring-boot:run` a make a request to the described mappings on the controller
 
 - [x] `@OneToOne`
-- [ ] `@OneToMany` #11
-- [ ] `@ManyToMany`#12
+- [ ] `@OneToMany` Issue #11
+- [ ] `@ManyToMany`Issue #12
 
 ## Junit 5 tests pending
 - [X] Controller tests
 - [X] Service Tests
 - [X] Repository Tests
-- [ ] Entity tests (Possibly Dto integration?) #22
+- [ ] Entity tests (Possibly Dto integration?) Issue #22
 
 ## Continuous Integration/ Code coverage
 
