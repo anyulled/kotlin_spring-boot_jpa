@@ -1,5 +1,6 @@
 package com.anyulled.jpademo.service
 
+import com.anyulled.jpademo.model.Child
 import com.anyulled.jpademo.model.Husband
 import com.anyulled.jpademo.model.Wife
 import com.anyulled.jpademo.repository.HusbandRepository
