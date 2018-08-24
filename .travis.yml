@@ -3,4 +3,5 @@ sudo: false # faster builds
 script: "mvn cobertura:cobertura"
 
 after_success:
+- ./mvnw jacoco:report coveralls:report
 - bash <(curl -s https://codecov.io/bash)
