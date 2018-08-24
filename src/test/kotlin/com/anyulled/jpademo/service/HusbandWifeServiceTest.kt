@@ -1,5 +1,6 @@
 package com.anyulled.jpademo.service
 
+import com.anyulled.jpademo.model.Child
 import com.anyulled.jpademo.model.Husband
 import com.anyulled.jpademo.model.Wife
 import org.assertj.core.api.Assertions.assertThat
@@ -28,6 +29,24 @@ internal class HusbandWifeServiceTest {
         val wifeWithHusband = Wife(1L, "wife with husband", Husband(2L, "husband", null))
         given(husbandWifeService.saveWife(wifeWithHusband)).willReturn(wifeWithHusband)
         assertThat(husbandWifeService.saveWife(wifeWithHusband)).isEqualTo(wifeWithHusband)
+    }
+
+    @Test
+    fun `save wife with husband and a child`() {
+        val wifeWithHusbandAndChild = Wife(1L, "wife with husband", Husband(2L, "husband", null))
+        wifeWithHusbandAndChild.addChild(Child(3L, "child1"))
+        given(husbandWifeService.saveWife(wifeWithHusbandAndChild)).willReturn(wifeWithHusbandAndChild)
+        assertThat(husbandWifeService.saveWife(wifeWithHusbandAndChild)).isEqualTo(wifeWithHusbandAndChild)
+    }
+
+
+    @Test
+    fun `save wife with husband and 2 children`() {
+        val wifeWithHusbandAndChild = Wife(1L, "wife with husband", Husband(2L, "husband", null))
+        wifeWithHusbandAndChild.addChild(Child(3L, "child1"))
+        wifeWithHusbandAndChild.addChild(Child(4L, "child2"))
+        given(husbandWifeService.saveWife(wifeWithHusbandAndChild)).willReturn(wifeWithHusbandAndChild)
+        assertThat(husbandWifeService.saveWife(wifeWithHusbandAndChild)).isEqualTo(wifeWithHusbandAndChild)
     }
 
     @Test

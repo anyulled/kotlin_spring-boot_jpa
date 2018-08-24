@@ -12,9 +12,10 @@ data class Child(
         val name: String = "",
 
         @ManyToOne
-        var mother: Wife
+        @JoinColumn(name = "mother_id")
+        var mother: Wife? = null
 ) {
     override fun toString(): String {
-        return "[$id: $name ${mother.name}]"
+        return "[$id: $name ${mother?.name}]"
     }
 }
