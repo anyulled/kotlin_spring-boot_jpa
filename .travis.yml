@@ -1,7 +1,17 @@
 language: java
-sudo: false # faster builds
-script: "mvn cobertura:cobertura"
-
+sudo: false
+cache:
+  directories:
+  - "$HOME/.m2/repository"
+  - "$HOME/.sonar/cache"
+addons:
+  sonarcloud:
+    organization: "anyulled-github"
+    token: $SONAR_TOKEN
+    
+script:
+- mvn cobertura:cobertura
+- mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar
 after_success:
-- ./mvnw jacoco:report coveralls:report
+- mvn jacoco:report coveralls:report
 - bash <(curl -s https://codecov.io/bash)
