@@ -6,7 +6,7 @@ cache:
   - "$HOME/.sonar/cache"
 addons:
   sonarcloud:
-    organization: anyulled-github
+    organization: "anyulled-github"
     token:
       secure: "HHzcQinRAw6hgBC05r8QnX4p6N25jd9V1/DAjnfR/XzYi2P02nP6uFC9Cyu7rzmNGkg/2jg5CQIrTmTMGjj6jl2Ze8GQadsJG/G6MEXO/RQVIPyuob6zEYzjy01Aq/UGupNCtGe/b3lUJq+V0hieWol4cQZoZ172M1ml4+PbNrplpTiEdJ5CF2UvELydqlLPMiJtlm34Pec1w4g6I5eI3q4FbRvrD0eZXLWomGVrErIRP6lfUGM/0ZqCe/5/bEAdg19qlZYzJ7TlBvAoKVNwJ7M8qrCX/s8h/F9TmON08SwwhCKPDo45a0vmPCxTV3wUP8Xo/9M9kppx7ki/NKzU2sasHjgJrtMSHIXSj35Ug6brQaxgjM7dCDkggU72JQhND/Fyln89y8bZEip6+geTnl1/F8wND4F8lo+/Ujzp5Z9eg91y93Ma1KXnUpOB0hXTcxblsenKrtzOM6OxD/ZIxDEptYh3kd9vRuAu9dZRE02Z3fqaNN0tI/draUyE8lEdci03uG0DBv24pMmk6OuR9cceXtk3LtbT0e+xnw1WvnNGzCjalcMhGPwBb7UIPCvG2HJgeAgemL0YtY3FYaonYYUi/69VqVSCpmvL8xAtf/+fGiFgNpRS5tEFm+6gS2/aB+BWUilTR3912wqQ5WNCEC0UJ0VFnZ6c8SYG2r34qxw="
 script:
