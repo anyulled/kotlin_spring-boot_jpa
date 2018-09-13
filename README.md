@@ -1,4 +1,5 @@
 <img src="https://github.com/JetBrains/kotlin-workshop/blob/master/kotlinlogo.png" width="24"/> Kotlin JPA Demo 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/5497c68bc3ec4038bc6b38706c0d92ba)](https://app.codacy.com/app/anyulled/kotlin_spring-boot_jpa?utm_source=github.com&utm_medium=referral&utm_content=anyulled/kotlin_spring-boot_jpa&utm_campaign=Badge_Grade_Settings)
 [![Build Status](https://travis-ci.com/anyulled/kotlin_spring-boot_jpa.svg?branch=master)](https://travis-ci.com/anyulled/kotlin_spring-boot_jpa)
 [![codecov](https://codecov.io/gh/anyulled/kotlin_spring-boot_jpa/branch/master/graph/badge.svg)](https://codecov.io/gh/anyulled/kotlin_spring-boot_jpa)
 [![Maintainability](https://api.codeclimate.com/v1/badges/a10d87df5e5803a64feb/maintainability)](https://codeclimate.com/github/anyulled/kotlin_spring-boot_jpa/maintainability)
