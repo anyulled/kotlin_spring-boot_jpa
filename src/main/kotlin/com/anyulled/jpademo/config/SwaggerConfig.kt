@@ -13,10 +13,17 @@ import springfox.documentation.spi.DocumentationType
 import springfox.documentation.spring.web.plugins.Docket
 import springfox.documentation.swagger2.annotations.EnableSwagger2
 
+/**
+ * Swagger configuration class
+ */
 @Configuration
 @EnableSwagger2
 class SwaggerConfig : WebMvcConfigurationSupport() {
 
+    /**
+     * Add resource handlers
+     * @param registry the resource handler registry
+     */
     override fun addResourceHandlers(registry: ResourceHandlerRegistry) {
         registry.addResourceHandler("swagger-ui.html")
                 .addResourceLocations("classpath:/META-INF/resources/")
@@ -26,6 +33,10 @@ class SwaggerConfig : WebMvcConfigurationSupport() {
 
     }
 
+    /**
+     * api documentation
+     * @return the [Docket] documentation
+     */
     @Bean
     fun productApi(): Docket = Docket(DocumentationType.SWAGGER_2).select()
             .apis(RequestHandlerSelectors.basePackage("com.anyulled.jpademo.controller"))

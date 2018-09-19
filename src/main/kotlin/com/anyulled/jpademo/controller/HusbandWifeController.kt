@@ -26,26 +26,54 @@ class HusbandWifeController(private val husbandWifeService: HusbandWifeService) 
         husbandWifeService.saveWife(wife)
     }
 
+    /**
+     * Shows a list of wives from the database
+     * @return a list of [Wife]
+     */
     @GetMapping("/wives", produces = [MediaType.APPLICATION_JSON_UTF8_VALUE])
     @ApiOperation("view a list of wives")
     fun getWives(): List<Wife> = husbandWifeService.getWives()
 
+    /**
+     * Shows a list of husbands from the database
+     * @return a List of [Husband]
+     */
     @GetMapping("/husbands", produces = [MediaType.APPLICATION_JSON_UTF8_VALUE])
     @ApiOperation("view a list of husbands")
     fun getHusbands(): List<Husband> = husbandWifeService.getHusbands()
 
+    /**
+     * Gets a husband by its id
+     * @param id [Long] identifier
+     * @return the [Husband] found
+     */
     @GetMapping("/husbands/{id}", produces = [MediaType.APPLICATION_JSON_UTF8_VALUE])
     @ApiOperation("view a Husband by its id")
     fun getHusband(@PathVariable id: Long) = husbandWifeService.getHusband(id)
 
+    /**
+     * Get wife by its id
+     * @param id [Long] identifier
+     * @return the [Wife] on the database
+     */
     @GetMapping("/wives/{id}", produces = [MediaType.APPLICATION_JSON_UTF8_VALUE])
     @ApiOperation("view a Wife by its id")
     fun getWife(@PathVariable id: Long): Wife = husbandWifeService.getWife(id)
 
+    /**
+     * saves a [Husband] on the database
+     * @param husband [Husband] input husband
+     * @return the [husband] found on the DB
+     */
     @PostMapping("/husband", produces = [MediaType.APPLICATION_JSON_UTF8_VALUE], consumes = [MediaType.APPLICATION_JSON_UTF8_VALUE])
     @ApiOperation("save a Husband")
     fun saveHusband(@RequestBody husband: Husband): Husband = husbandWifeService.saveHusband(husband)
 
+    /**
+     * saves a wife
+     * @param wife [Wife] the wife object
+     * @return the [Wife] saved
+     */
     @PostMapping("/wife", produces = [MediaType.APPLICATION_JSON_UTF8_VALUE], consumes = [MediaType.APPLICATION_JSON_UTF8_VALUE])
     @ApiOperation("save a Husband")
     fun saveWife(@RequestBody wife: Wife): Wife = husbandWifeService.saveWife(wife)
