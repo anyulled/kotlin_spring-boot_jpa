@@ -26,6 +26,7 @@
     </properties>
 
     <dependencies>
+        <!--<editor-fold desc="Spring-Boot">-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
@@ -37,11 +38,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.github.microutils</groupId>
-            <artifactId>kotlin-logging</artifactId>
-            <version>1.5.9</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -60,6 +56,13 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-webflux</artifactId>
         </dependency>
+        <!--</editor-fold>-->
+        <!--<editor-fold desc="Kotlin">-->
+        <dependency>
+            <groupId>io.github.microutils</groupId>
+            <artifactId>kotlin-logging</artifactId>
+            <version>1.5.9</version>
+        </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.module</groupId>
             <artifactId>jackson-module-kotlin</artifactId>
@@ -72,6 +75,8 @@
             <groupId>org.jetbrains.kotlin</groupId>
             <artifactId>kotlin-reflect</artifactId>
         </dependency>
+        <!--</editor-fold>-->
+        <!--<editor-fold desc="Misc">-->
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-ehcache</artifactId>
@@ -91,16 +96,33 @@
             <artifactId>junit-jupiter-api</artifactId>
             <scope>test</scope>
         </dependency>
+        <!--</editor-fold>-->
+        <!--<editor-fold desc="Swagger">-->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.9.2</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.9.2</version>
+        </dependency>
+        <!--</editor-fold>-->
+
     </dependencies>
 
     <build>
         <sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>
         <testSourceDirectory>${project.basedir}/src/test/kotlin</testSourceDirectory>
         <plugins>
+            <!--<editor-fold desc="spring-boot maven">-->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            <!--</editor-fold>-->
+            <!--<editor-fold desc="Kotlin">-->
             <plugin>
                 <artifactId>kotlin-maven-plugin</artifactId>
                 <groupId>org.jetbrains.kotlin</groupId>
@@ -126,6 +148,8 @@
                     </dependency>
                 </dependencies>
             </plugin>
+            <!--</editor-fold>-->
+            <!--<editor-fold desc="Jacoco">-->
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
@@ -145,6 +169,8 @@
                     </execution>
                 </executions>
             </plugin>
+            <!--</editor-fold>-->
+            <!--<editor-fold desc="Cobertura">-->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>cobertura-maven-plugin</artifactId>
@@ -157,8 +183,8 @@
                     <check/>
                 </configuration>
             </plugin>
+            <!--</editor-fold>-->
         </plugins>
     </build>
-
 
 </project>
