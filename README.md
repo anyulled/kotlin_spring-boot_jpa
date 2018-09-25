@@ -6,6 +6,7 @@
 [![Documentation](https://codedocs.xyz/anyulled/kotlin_spring-boot_jpa.svg)](https://codedocs.xyz/anyulled/kotlin_spring-boot_jpa/)
 [![Sonarqube](https://sonarcloud.io/api/project_badges/measure?project=com.anyulled%3Ajpademo&metric=alert_status)](https://sonarcloud.io/dashboard?id=com.anyulled%3Ajpademo)
 [![Coverage Status](https://coveralls.io/repos/github/anyulled/kotlin_spring-boot_jpa/badge.svg?branch=master)](https://coveralls.io/github/anyulled/kotlin_spring-boot_jpa?branch=master)
+[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/2243/badge)](https://bestpractices.coreinfrastructure.org/projects/2243)
 ---
 
 A showcase of different entity mappings with JPA & Hibernate.
