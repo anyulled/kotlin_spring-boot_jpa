@@ -15,9 +15,9 @@ addons:
     token: $SONAR_TOKEN
     
 script:
-- gradle cobertura
-- gradle sonarqube
+- ./gradlew cobertura
+- ./gradlew sonarqube
 after_success:
-- gradle cobertura coveralls
-- gradle jacocoTestReport coveralls
+- ./gradlew cobertura coveralls
+- ./gradlew jacocoTestReport coveralls
 - bash <(curl -s https://codecov.io/bash)
