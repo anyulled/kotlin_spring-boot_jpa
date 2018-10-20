@@ -75,6 +75,7 @@ dependencies {
     compile(group = "io.github.microutils", name = "kotlin-logging", version = "1.5.9")
     compile(group = "io.springfox", name = "springfox-swagger2", version = "2.9.2")
     compile(group = "io.springfox", name = "springfox-swagger-ui", version = "2.9.2")
+    compile(group = "io.sentry", name = "sentry-spring", version = "1.7.10")
     testCompile(kotlin("test"))
     testCompile(kotlin("test-junit"))
     testCompile(group = "org.springframework.boot", name = "spring-boot-starter-test", version = "2.0.4.RELEASE")
