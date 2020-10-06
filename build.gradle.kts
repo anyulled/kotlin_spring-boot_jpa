@@ -12,7 +12,7 @@ plugins {
     id("org.springframework.boot") version "2.0.2.RELEASE"
     id("org.jetbrains.kotlin.plugin.spring") version kotlinVersion
     id("org.jetbrains.kotlin.plugin.jpa") version kotlinVersion
-    id("io.spring.dependency-management") version "1.0.4.RELEASE"
+    id("io.spring.dependency-management") version "1.0.10.RELEASE"
     id("org.sonarqube") version "2.6.2"
 }
 
