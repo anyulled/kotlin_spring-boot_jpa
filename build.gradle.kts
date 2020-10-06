@@ -69,7 +69,7 @@ dependencies {
     compile(group = "org.springframework.boot", name = "spring-boot-starter-webflux", version = "2.0.4.RELEASE")
     compile(kotlin("stdlib-jdk8"))
     compile(kotlin("reflect"))
-    compile(group = "org.hibernate", name = "hibernate-ehcache", version = "5.2.17.Final")
+    compile(group = "org.hibernate", name = "hibernate-ehcache", version = "5.4.22.Final")
     compile(group = "com.fasterxml.jackson.module", name = "jackson-module-kotlin", version = "2.11.3")
     compile(group = "com.h2database", name = "h2", version = "1.4.200")
     compile(group = "io.github.microutils", name = "kotlin-logging", version = "1.12.0")
