@@ -8,7 +8,7 @@ plugins {
     idea
     kotlin("jvm") version "1.2.61"
     id("net.saliman.cobertura") version "2.5.4"
-    id("com.github.kt3k.coveralls") version "2.8.2"
+    id("com.github.kt3k.coveralls") version "2.10.2"
     id("org.springframework.boot") version "2.0.2.RELEASE"
     id("org.jetbrains.kotlin.plugin.spring") version kotlinVersion
     id("org.jetbrains.kotlin.plugin.jpa") version kotlinVersion
