@@ -71,7 +71,7 @@ dependencies {
     compile(kotlin("reflect"))
     compile(group = "org.hibernate", name = "hibernate-ehcache", version = "5.2.17.Final")
     compile(group = "com.fasterxml.jackson.module", name = "jackson-module-kotlin", version = "2.11.3")
-    compile(group = "com.h2database", name = "h2", version = "1.4.197")
+    compile(group = "com.h2database", name = "h2", version = "1.4.200")
     compile(group = "io.github.microutils", name = "kotlin-logging", version = "1.12.0")
     compile(group = "io.springfox", name = "springfox-swagger2", version = "2.9.2")
     compile(group = "io.springfox", name = "springfox-swagger-ui", version = "2.9.2")
