@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    val kotlinVersion = "1.2.61"
+    val kotlinVersion = "1.4.10"
     java
     maven
     jacoco
