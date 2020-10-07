@@ -9,7 +9,7 @@ plugins {
     kotlin("jvm") version "1.2.61"
     id("net.saliman.cobertura") version "2.6.1"
     id("com.github.kt3k.coveralls") version "2.10.2"
-    id("org.springframework.boot") version "2.0.2.RELEASE"
+    id("org.springframework.boot") version "2.3.4.RELEASE"
     id("org.jetbrains.kotlin.plugin.spring") version kotlinVersion
     id("org.jetbrains.kotlin.plugin.jpa") version kotlinVersion
     id("io.spring.dependency-management") version "1.0.10.RELEASE"
@@ -61,12 +61,12 @@ repositories {
 }
 
 dependencies {
-    compile(group = "org.springframework.boot", name = "spring-boot-devtools", version = "2.0.4.RELEASE")
-    compile(group = "org.springframework.boot", name = "spring-boot-starter-actuator", version = "2.0.4.RELEASE")
-    compile(group = "org.springframework.boot", name = "spring-boot-starter-data-jpa", version = "2.0.4.RELEASE")
-    compile(group = "org.springframework.boot", name = "spring-boot-starter-jdbc", version = "2.0.4.RELEASE")
-    compile(group = "org.springframework.boot", name = "spring-boot-starter-web", version = "2.0.4.RELEASE")
-    compile(group = "org.springframework.boot", name = "spring-boot-starter-webflux", version = "2.0.4.RELEASE")
+    compile(group = "org.springframework.boot", name = "spring-boot-devtools", version = "2.3.4.RELEASE")
+    compile(group = "org.springframework.boot", name = "spring-boot-starter-actuator", version = "2.3.4.RELEASE")
+    compile(group = "org.springframework.boot", name = "spring-boot-starter-data-jpa", version = "2.3.4.RELEASE")
+    compile(group = "org.springframework.boot", name = "spring-boot-starter-jdbc", version = "2.3.4.RELEASE")
+    compile(group = "org.springframework.boot", name = "spring-boot-starter-web", version = "2.3.4.RELEASE")
+    compile(group = "org.springframework.boot", name = "spring-boot-starter-webflux", version = "2.3.4.RELEASE")
     compile(kotlin("stdlib-jdk8"))
     compile(kotlin("reflect"))
     compile(group = "org.hibernate", name = "hibernate-ehcache", version = "5.4.22.Final")
@@ -78,7 +78,7 @@ dependencies {
     compile(group = "io.sentry", name = "sentry-spring", version = "1.7.30")
     testCompile(kotlin("test"))
     testCompile(kotlin("test-junit"))
-    testCompile(group = "org.springframework.boot", name = "spring-boot-starter-test", version = "2.0.4.RELEASE")
+    testCompile(group = "org.springframework.boot", name = "spring-boot-starter-test", version = "2.3.4.RELEASE")
     testCompile(group = "io.projectreactor", name = "reactor-test", version = "3.3.10.RELEASE")
     testImplementation(group = "org.junit.jupiter", name = "junit-jupiter-api", version = "5.7.0")
     testRuntimeOnly(group = "org.junit.jupiter", name = "junit-jupiter-engine")
