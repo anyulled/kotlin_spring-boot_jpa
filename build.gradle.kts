@@ -13,7 +13,7 @@ plugins {
     id("org.jetbrains.kotlin.plugin.spring") version kotlinVersion
     id("org.jetbrains.kotlin.plugin.jpa") version kotlinVersion
     id("io.spring.dependency-management") version "1.0.10.RELEASE"
-    id("org.sonarqube") version "2.6.2"
+    id("org.sonarqube") version "3.0"
 }
 
 group = "com.anyulled"
