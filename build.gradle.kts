@@ -80,6 +80,6 @@ dependencies {
     testCompile(kotlin("test-junit"))
     testCompile(group = "org.springframework.boot", name = "spring-boot-starter-test", version = "2.0.4.RELEASE")
     testCompile(group = "io.projectreactor", name = "reactor-test", version = "3.3.10.RELEASE")
-    testImplementation(group = "org.junit.jupiter", name = "junit-jupiter-api", version = "5.1.1")
+    testImplementation(group = "org.junit.jupiter", name = "junit-jupiter-api", version = "5.7.0")
     testRuntimeOnly(group = "org.junit.jupiter", name = "junit-jupiter-engine")
 }
