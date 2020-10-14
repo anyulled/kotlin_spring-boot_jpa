@@ -1,5 +1,7 @@
 {
   "extends": [
     "config:base"
-  ]
+  ],
+  "updateTypes": ["minor", "patch", "pin", "digest"],
+  "automerge": true
 }
